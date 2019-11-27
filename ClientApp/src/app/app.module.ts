@@ -19,7 +19,7 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { MatIconModule } from '@angular/material/icon';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatDatepickerModule, MatNativeDateModule, MatInputModule, MatButtonModule, MatRadioModule } from '@angular/material';
-import { MatSelectModule, MatDividerModule} from '@angular/material';
+import { MatSelectModule, MatDividerModule, MatAutocompleteModule} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -57,7 +57,8 @@ import { MatSelectModule, MatDividerModule} from '@angular/material';
     MatRadioModule,
     MatSelectModule,
     ReactiveFormsModule,
-    MatDividerModule
+    MatDividerModule,
+    MatAutocompleteModule
   ],
   providers: [],
   bootstrap: [AppComponent]
