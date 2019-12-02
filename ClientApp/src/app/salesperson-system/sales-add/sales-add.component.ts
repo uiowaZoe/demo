@@ -1,8 +1,8 @@
-import { WholesalerService } from '../service/get/wholesaler.service';
+import { WholesalerService } from './../../service/get/wholesaler.service';
 import { Component, OnInit } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
-import { PaymentmethodService } from '../service/get/paymentmethod.service';
-import { PayerService } from '../service/get/payer.service';
+import { PaymentmethodService } from '../../service/get/paymentmethod.service';
+import { PayerService } from '../../service/get/payer.service';
 import { Observable } from 'rxjs';
 import {map, startWith} from 'rxjs/operators';
 // import { lstat } from 'fs';
@@ -11,11 +11,11 @@ export interface Animal {
   sound: string;
 }
 @Component({
-  selector: 'app-salesperson-system',
-  templateUrl: './salesperson-system.component.html',
-  styleUrls: ['./salesperson-system.component.css']
+  selector: 'app-sales-add',
+  templateUrl: './sales-add.component.html',
+  styleUrls: ['./sales-add.component.css']
 })
-export class SalespersonSystemComponent implements OnInit {
+export class SalesAddComponent implements OnInit {
   step = 0;
   baseCurrency = '$';
   baseLocation = 'USA';

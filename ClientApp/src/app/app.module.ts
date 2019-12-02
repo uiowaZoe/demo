@@ -19,7 +19,9 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { MatIconModule } from '@angular/material/icon';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatDatepickerModule, MatNativeDateModule, MatInputModule, MatButtonModule, MatRadioModule } from '@angular/material';
-import { MatSelectModule, MatDividerModule, MatAutocompleteModule} from '@angular/material';
+import { MatSelectModule, MatDividerModule, MatAutocompleteModule, MatTabsModule, MatTableModule} from '@angular/material';
+import { SalesAddComponent } from './salesperson-system/sales-add/sales-add.component';
+import { SalesSearchComponent } from './salesperson-system/sales-search/sales-search.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +34,8 @@ import { MatSelectModule, MatDividerModule, MatAutocompleteModule} from '@angula
     SalespersonSystemComponent,
     AccountingSystemComponent,
     AdminSystemComponent,
+    SalesAddComponent,
+    SalesSearchComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -58,7 +62,8 @@ import { MatSelectModule, MatDividerModule, MatAutocompleteModule} from '@angula
     MatSelectModule,
     ReactiveFormsModule,
     MatDividerModule,
-    MatAutocompleteModule
+    MatAutocompleteModule,
+    MatTabsModule, MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
